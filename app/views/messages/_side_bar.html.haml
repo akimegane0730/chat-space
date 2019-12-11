@@ -1,8 +1,8 @@
 .side-bar 
   .side-bar__user
     .top-items
-      .top-items__name 
-        %h5= current_user.name
+      %h3.top-items__name 
+        = current_user.name
       .top-items__icons
         =link_to "#"  do
           = icon('fas', 'image')
