@@ -1,0 +1,22 @@
+.chat-main__message-list__message
+  .chat-main__message-list__message__upper-info
+    .chat-main__message-list__message__upper-info__talker
+      = message.user.name
+    .chat-main__message-list__message__upper-info__date 
+      = message.created_at.strftime("%Y/%m/%d %H:%M")
+  .chat-main__message-list__message__text
+    - if message.content.present?
+      %p.lower-message__content
+        = message.content
+    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
+
+
+
+
+  -# .chat-main__message-list
+  -#   .chat-main__message-list__message
+  -#     .chat-main__message-list__message__upper-info
+  -#       .chat-main__message-list__message__upper-info__talker mada        
+  -#       .chat-main__message-list__message__upper-info__date 2019/11/30
+  -#     .chat-main__message-list__message__text おはよう
+    
