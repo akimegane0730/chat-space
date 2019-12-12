@@ -99,6 +99,7 @@
 
 .group-info__right-link {
   border: solid 1px $beautiful-color;
+  text-decoration: none;
 }
 
 .chat-main__group-info {
@@ -183,7 +184,7 @@
   }
 }
 
-.chat-main__message-form__new-message__submit-btn {
+.form__submit {
   display: flex;
   width: 100px;
   height: 50px;
