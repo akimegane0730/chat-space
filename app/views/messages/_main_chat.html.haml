@@ -1,7 +1,8 @@
 .chat-main
   .chat-main__group-info
     .group-info__left-box 
-      .group-info__left-box__group-name ベイスターズ
+      .group-info__left-box__group-name 
+        = @group.name
       .group-info__left-box__group-member aaa
     .group-info__right-box 
     =link_to edit_group_path(@group), class: "group-info__right-link" do
