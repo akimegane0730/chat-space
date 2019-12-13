@@ -4,21 +4,10 @@
       .group-info__left-box__group-name ベイスターズ
       .group-info__left-box__group-member aaa
     .group-info__right-box 
-    =link_to "https://www.facebook.com/", class: "group-info__right-link" do
+    =link_to edit_group_path(@group), class: "group-info__right-link" do
       Edit
   .chat-main__message-list
     = render @messages
-  -# .chat-main__message-list
-  -#   .chat-main__message-list__message
-  -#     .chat-main__message-list__message__upper-info
-  -#       .chat-main__message-list__message__upper-info__talker mada        
-  -#       .chat-main__message-list__message__upper-info__date 2019/11/30
-  -#     .chat-main__message-list__message__text おはよう
-  -#   .chat-main__message-list__message
-  -#     .chat-main__message-list__message__upper-info
-  -#       .chat-main__message-list__message__upper-info__talker mada        
-  -#       .chat-main__message-list__message__upper-info__date 2019/11/30
-  -#     .chat-main__message-list__message__text おはよう
   .chat-main__message-form
     .form
       = form_for [@group, @message] do |f|
