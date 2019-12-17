@@ -63,7 +63,9 @@ $(function() {
      .done(function(data){
        var html = buildHTML(data);
        $('.chat-main__message-list').append(html);
-       console.log(data.content)
+       $('.chat-main__message-list__message').animate({scrollTop: $('.chat-main__message-list__message')[0].scrollHeight}, 'fast');
+       $('form')[0].reset();
+       
      })
   })  
 });
