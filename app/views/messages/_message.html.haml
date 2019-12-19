@@ -1,4 +1,4 @@
-.chat-main__message-list__message
+.chat-main__message-list__message{"data-message-id": "#{message.id}"}
   .chat-main__message-list__message__upper-info
     .chat-main__message-list__message__upper-info__talker
       = message.user.name
@@ -9,14 +9,3 @@
       %p.lower-message__content
         = message.content
     = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
-
-
-
-
-  -# .chat-main__message-list
-  -#   .chat-main__message-list__message
-  -#     .chat-main__message-list__message__upper-info
-  -#       .chat-main__message-list__message__upper-info__talker mada        
-  -#       .chat-main__message-list__message__upper-info__date 2019/11/30
-  -#     .chat-main__message-list__message__text おはよう
-    
