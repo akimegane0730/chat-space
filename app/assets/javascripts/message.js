@@ -83,7 +83,7 @@ $(function() {
           $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight}, 'fast');
         })
         .fail(function() {
-          console.log('error');
+          alert("自動更新に失敗しました。");
         });
       };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
