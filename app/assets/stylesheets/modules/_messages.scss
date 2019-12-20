@@ -53,10 +53,11 @@
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   margin-top: 100px;
+  overflow: scroll;
 }
 .group {
   padding: 20px 20px 0 20px;
-  
+  text-decoration: none;
 
   &__group-name {
     margin-bottom: 5px;
@@ -137,65 +138,6 @@
     }
   }
   }
-// .chat-main__message-form {
-//   background-color: #d2d2d2;
-//   height: 90px;
-//   margin-bottom: 0px;
-//   display: flex;
-//   align-items: center;
-  
-//   &__new-message {
-//     padding-right: 40px;
-//     height: 50px;
-//     width: 100%;
-//     padding-left: 40px;
-//     display: flex;
-
-//     &__submit-btn {
-//       display: flex;
-//       width: 100px;
-//       height: 50px;
-//       padding: 0 30px;
-//       margin-left: 15px;
-//       background-color: $beautiful-color;
-//       color: $section-color;
-//       line-height: 50px;
-//     }
-    
-//     &__input-box {
-//       position: relative;
-//       background-color: $section-color;
-//       height: 50px;
-//       width: 100%;
-      
-//       &__text {
-//         line-height: 50px;
-//         color: #999999;
-//         padding-left: 10px;
-//       }
-//       &__image {
-//         position: absolute;
-//         top: 7px;
-//         right: 10px;
-//         input{
-//           display: none;
-//         }
-//       }
-//     }
-//   }
-// }
-
-// .form__submit {
-//   display: flex;
-//   width: 100px;
-//   height: 50px;
-//   padding: 0 30px;
-//   margin-left: 15px;
-//   background-color: $beautiful-color;
-//   color: $section-color;
-//   line-height: 50px;
-// }
-
 
 .form {
   background-color: #DDDDDD;
