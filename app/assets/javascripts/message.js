@@ -80,13 +80,14 @@ $(function() {
             insertHTML += buildHTML(message)
           });
           $('.chat-main__message-list').append(insertHTML);
-          $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight}, 'fast');
+          if (insertHTML != null) {$('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight}, 'fast');
+          }
         })
         .fail(function() {
           alert("自動更新に失敗しました。");
         });
       };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-  setInterval(reloadMessages,3000);
+  setInterval(reloadMessages,5000);
   }
 });
